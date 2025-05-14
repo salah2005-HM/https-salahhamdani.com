@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Create an account</title>
+	<script src="Untiteld.js"></script>
+	<style>
+	table, tr, td {
+	background-color: #ADFF2F;
+	border: 1px solid black;
+    border-collapse: collapse;
+	margin: auto;
+	}
+	</style>
+</head>
+<body>
+	<h1>Create an account</h1>
+	<form onsubmit="return infos_validation()" method="post" action="tp3.php">
+    <table border="1" width="100%"> 
+
+        <tr>
+            <td label for="First Name">First Name:</label></td>
+            <td><input type="text" id="First Name" placeholder="Enter your First Name" name="first Name"/></td>
+        </tr>
+
+        <tr>
+            <td label for="LN">Last name:</label></td>
+            <td><input id="LN" type="text" name="Last name" placeholder="Enter your last Name"></td>
+        </tr>
+
+        <tr>
+            <td label for="age">Age:</label></td>
+            <td>
+                    <input type="number" id="Age" name="Age" value="Age" placeholder="Enter your age:">
+                </td>
+        </tr>
+
+        <tr>
+            <td label for="wilaya">wilaya:</label></td>
+            <td><select id="wilaya" required>
+				<option id="19">setif</option>
+				<option id="16">Alger</option>
+				<option id="21">Telemsen</option>
+				<option id="18">Wahran</option>
+				<option id="12">Blida</option>
+				<option id="20">Biskra</option>
+				<option id="1">Adrar</option>
+				<option id="6">batna</option>
+				<option id="5">Annaba</option>
+				<option id="9">Tarif</option>
+			</select></td>
+        </tr>
+
+        <tr>
+            <td>Telephone</td>
+            <td><input type="tel" id="tel" name="tel" size="50" placeholder="Enter your phone number" maxlength="10" /></td>
+        </tr>
+
+        <tr>
+            <td>E-mail</td>
+            <td><input type="email" id="email" name="email" size="50" placeholder="Enter your e-mail" /></td>
+        </tr>
+
+        <tr>
+            <td>Adresse</td>
+            <td><input type="address" id="address" size="50" placeholder="Enter your address"/></td>
+        </tr>
+
+        <tr>
+            <td>Mot de passe</td>
+            <td><input size="50" id="Pass" type="password" name="password" placeholder="Enter your password"></td>
+        </tr>
+
+        <tr>
+            <td>Confirm the password:</td>
+            <td><input size="50" id="CPass" type="password" name="password" placeholder="Confirm your password" ></td>
+        </tr>
+
+        <tr>
+            <td><label for="gender"> Gender:</label></td>
+    <td>
+        <input id="gender" type="radio" name="male" value="gender">Male
+        <input id="gender" type="radio" name="male" value="gender">Female
+    </td>
+        </tr>
+
+        <tr>
+          <td></td>
+		  <td><button type="reset">Clear</button>
+			  <button onclick="infos_validation()" type="submit">Send</button></td>
+        </tr>
+    </table>
+</form>
+</body>
+</html>
